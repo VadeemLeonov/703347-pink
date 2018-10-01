@@ -5,8 +5,101 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+  	<header class="page-header">
+  		<a class="page-header__logo">
+  			<p class="page-header__logo-text">PINK</p>
+  		</a>
+  		<button class="page-header__toggle" type="button">
+  			<span class="button__icon">
+  			</span>Открыть меню
+  		</button>
+  		<div class="main-nav__wrapper">
+  			<nav class="main-nav visually-hidden">
+  				<ul class="main-nav__list site-list">
+  					<li class="site-list__item">
+  						<a>главная</a>
+  					</li>
+  					<li class="site-list__item">
+  						<a href="">фотографии</a>
+  					</li>
+  					<li class="site-list__item">
+  						<a href="">конкурс</a>
+  					</li>
+  					<li class="site-list__item">
+  						<a href="">html academy</a>
+  					</li>
+  				</ul>
+  			</nav> 			
+  		</div>
+  	</header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <main class="page-main">
+    	<h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
+    	<img class="page-main__poster" src="img/.jpg" width="226" height="30" alt="Постер раскрашивания серых будней">
+    	<div class="downloads">
+    		<a class="downloads__btn" href="">Скачать приложение</a>
+    		<span class="downloads__available-aple"></span>
+    		<span class="downloads__available-android"></span>
+    		<span class="downloads__available-windows"></span>
+    		<p class="downloads__info">Доступно для iPhone, ipad, Android, Windows Phone, OS X, Windows 8</p>
+    	</div>
+    	<section class="advantages">
+    		<h2 class="advantages__slogan">Устали от серости мегаполиса?<br><br>Нам  есть, что вам предложить!</h2>
+    		<ul class="advantages__list">
+    			<li class="advantages__items">
+    				<h3 class="advantages__title">Поднимает настроение</h3>
+    				<p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+    			</li>
+    			<li class="advantages__items">
+    				<h3 class="advantages__title">Меняет мир вокруг</h3>
+    				<p class="advantages__description">Сделайте снимок и украсте его смайликом или текстово подписью, что-бы усилить эффект</p>
+    			</li>
+    			<li class="advantages__items">
+    				<h3 class="advantages__title">Заводит новых друзей</h3>
+    				<p class="advantages__description">Ставте лайки, комментируйте, делитесь фотогафиями с друзьями и заводите новых</p>
+    			</li>
+    		</ul>
+    	</section>
+    	<section class="reviews">
+    		<div class="reviews__wrapper slider">
+    		  <h2 class="visually-hidden">Отзывы о нас</h2>
+    		  <div class="reviews__list  slider__list">
+    			  <blockquote class="reviews__item  slider__item">
+    				  <p class="reviews__smile">
+    					  <img  class="reviews__smile-image" src="img/picture-smile.jpg" width="50" height="33" alt="смайлик">
+    					</p>
+    					<cite class="reviews__author-name">Николай Петров</cite>
+    					<p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
+    				</blockquote>
+    				<blockquote class="reviews__item  slider__item">
+    					<p class="reviews__pink">
+    						<img  class="reviews__pink-image" src="img/picture-smile.jpg" width="50" height="33" alt="розовый">
+    					</p>
+    					<cite class="reviews__author-name">Николай Петров</cite>
+    					<p class="reviews__text"></p>
+    				</blockquote>
+    				<blockquote class="reviews__item  slider__item">
+    					<p class="reviews__grey">
+    						<img  class="reviews__grey-image" src="img/picture-smile.jpg" width="50" height="33" alt="серый">
+    					</p>
+    					<cite class="reviews__author-name">Николай Петров</cite>
+    					<p class="reviews__text"></p>
+    				</blockquote>
+    			</div>
+    			<p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+    		</div>
+    	</section>
+    	<section class="tariffs">
+    		<h2 class="visually-hidden">Тарифы</h2>
+    		<div class="tariffs__wrapper slider">
+    			
+    		</div>
+    	</section>
+    </main>
 
   </body>
 </html>
