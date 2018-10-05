@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк, форма</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <p class="page-header__logo-text">PINK</p>
+    </a>
+    <button class="page-header__toggle" type="button">
+      <span class="button__icon">
+      </span>Открыть меню
+    </button>
+    <div class="main-nav__wrapper">
+      <nav class="main-nav visually-hidden">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">html academy</a>
+          </li>
+        </ul>
+      </nav>      
+    </div>
+  </header>
+
+  <main class="page-form">
+    <h1 class="visually-hidden">Форма регистрации</h1>
+    <div class="contest wrapper">
+      <p class="contest__slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <p class="contest__conditions">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    </div>
+
+    <div class="name-form__wrapper">
+      <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-second-name">фамилия:</label>
+          <input class="data-form__second-name" id="user-second-name" type="text" name="user-second-name" placeholder="Укажите фамилию*">
+        </p>
+        <p>
+          <label for="user-first-name">имя:</label>
+          <input class="data-form__first-name" id="user-first-name" type="text" name="user-first-name" placeholder="Введите ваше имя*">
+        </p>
+        <p>
+          <label for="user-patronymic">отчество:</label>
+          <input class="data-form__patronymic" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отество тоже">
+        </p>
+      </form>
+    </div>
+
+    <div class="attainment-form__wrapper">
+      <p class="description-form">ваши безбашенные достижения в путешествии</p>
+      <form class="checkbox-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="shark" type="checkbox" name="shark" checked>
+            <span class="checkbox-form__indicator--square"></span>
+            Сделал сэлфи с акулой
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="beach" type="checkbox" name="beach" checked>
+            <span class="checkbox-form__indicator--square"></span>
+            Обгорел на пляже
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="Chuck" type="checkbox" name="Chuck">
+            <span class="checkbox-form__indicator--square"></span>
+            Видел Чака Норриса
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="souvenirs" type="checkbox" name="souvenirs">
+            <span class="checkbox-form__indicator--square"></span>
+            Накупил сувениров
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="tower" type="checkbox" name="tower" checked>
+            <span class="checkbox-form__indicator--square"></span>
+            Удержал башню
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="hotel" type="checkbox" name="hotel">
+            <span class="checkbox-form__indicator--square"></span>
+            Разгромил отель
+          </label>
+        </p>
+      </form>
+    </div>
+
+    <div class="contacts-form__wrapper">
+      <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-phone">номер телефона</label>
+          <input class="data-form__phone" id="user-phone" type="number" name="user-phone" placeholder="Номер, пожалуйста">
+        </p>
+        <p>
+          <label for="user-email">адрес почты</label>
+          <input class="data-form__email" id="user-email" type="email" name="user-email" placeholder="Введите почту*">
+        </p>
+      </form>
+    </div>
+
+    <div class="application-form__wrapper">
+      <p class="description-form">с каким приложением путешествовали?</p>
+      <form class="checkbox-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="iOS" type="radio" name="iOS" checked>
+            <span class="checkbox-form__indicator--square"></span>
+            Pink для iOS
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="Android" type="radio" name="Android">
+            <span class="checkbox-form__indicator--square"></span>
+            Pink на Android
+          </label>
+        </p>
+        <p>
+          <label class="description-form__checkbox">
+            <input class="visually-hidden" id="Windows" type="radio" name="Windows">
+            <span class="checkbox-form__indicator--square"></span>
+            Windows Phone
+          </label>
+        </p> 
+      </form>
+    </div>
+
+    <div class="review-form__wrapper">
+      <p class="">опишите свои эмоции</p>
+      <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+        <textarea name="review-form" id="review-form" cols="30" rows="10" placeholder="можно прям в красках, не стесняясь выражениях"></textarea>
+      </form>
+    </div>
+
+    <div class="page-form__wrapper">
+      <input class="page-form__submit" type="submit" value="отправить форму">
+      <p class="page-form__required">*-обязательные поля</p>
+    </div>
+
+  </main>
+
+  <footer class="form-footer">
+    <a class="logo page-form__logo">
+      <svg></svg>
+    </a>
+    <div class="form-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social-link social-link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+
+  </footer>
+
+</body>
+</html>

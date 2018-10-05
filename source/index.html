@@ -6,7 +6,7 @@
   </head>
   <body>
   	<header class="page-header">
-  		<a class="page-header__logo">
+  		<a class="logo page-header__logo">
   			<p class="page-header__logo-text">PINK</p>
   		</a>
   		<button class="page-header__toggle" type="button">
@@ -35,7 +35,7 @@
 
     <main class="page-main">
     	<h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
-    	<img class="page-main__poster" src="img/.jpg" width="320" height="300" alt="Постер раскрашивания серых будней">
+    	<img class="page-poster" src="img/.jpg" width="320" height="300" alt="Постер раскрашивания серых будней">
     	<div class="downloads">
     		<a class="downloads__btn" href="">Скачать приложение</a>
     		<span class="downloads__available-aple"></span>
@@ -93,26 +93,46 @@
           </p>
     		</div>
     	</section>
-    	<section class="tariffs">
+    	<section class="tariff">
     		<h2 class="visually-hidden">Тарифы</h2>
-    		<div class="tariffs__wrapper slider">
-    			<table class="tariff-list">
-            <tr>
-              <td class="tariff__field">Стандарт</td>
-              <td class="tariff__value">3.99 USD</td>
-            </tr>
-            <tr>
-              <td class="tariff__field">розовый фильтр</td>
-              <td class="tariff__value"></td>
-            </tr>
-            <tr>
-              <td class="tariff__field">смайлики</td>
-              <td class="tariff__value"></td>
-            </tr>
-            <tr>
-              <td class="tariff__field">комментарии</td>
-              <td class="tariff__value"></td>
-            </tr>
+    		<div class="tariff__wrapper slider">
+    			<table class="tariff__list">
+    				<thead class="tariff__list-head">
+    					<tr>
+    						<td class="tariff__field--tariff-name"></td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field">Стандарт</td>
+    						<td class="tariff__value">3.99 USD</td>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    					</tr>
+    				</thead>
+    				<tbody class="tariff__list-body">
+    					<tr>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field">розовый фильтр</td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    					</tr>
+    					<tr>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field">смайлики</td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    					</tr>
+    					<tr>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field">комментарии</td>
+    						<td class="tariff__value"></td>
+    						<td class="tariff__field"></td>
+    						<td class="tariff__value"></td>
+    					</tr>
+    				</tbody>
           </table>
     		</div>
     		<p class="reviews__toggles slider__toggles">
