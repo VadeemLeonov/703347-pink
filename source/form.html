@@ -6,182 +6,170 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <p class="page-header__logo-text">PINK</p>
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="button__icon">
-        </span>Открыть меню
-      </button>
-      <div class="main-nav__wrapper">
-        <nav class="main-nav visually-hidden">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="">главная</a>
+      <a class="page-header__logo" href="index.html">PINK</a>
+      <nav class="main-nav">
+        <button class="page-header__toggle--open/close" type="button">Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="">фотографии</a>
+            <li class="main-nav__item">
+              <a href="photo.html">фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a href="">конкурс</a>
+            <li class="main-navt__item--current-item">
+              <a>конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="">html academy</a>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+      <div class="headline">
+       <h1 class="headline__text">Конкурс на самое безбашенное путешествие с Пинк</h1> 
+      </div> 
     </header>
 
     <main class="page-form">
-      <div class="headline wrapper">
-        <h1 class="headline__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <p class="headline__banner">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-      </div>
+      <section class="competition-feedback">
+        <p class="competition-feedback__banner">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <form class="competition-feedback__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="name-form">
+            <fieldset class="data-form">
+              <ul>
+                <li class="data-form__second-name">
+                  <label for="user-second-name">фамилия:</label>
+                  <input id="user-second-name" type="text" name="user-second-name" placeholder="Укажите фамилию*">
+                </li>
+                <li class="data-form__first-name">
+                  <label for="user-first-name">имя:</label>
+                  <input id="user-first-name" type="text" name="user-first-name" placeholder="Введите ваше имя*">
+                </li>
+                <li class="data-form__patronymic">
+                  <label for="user-patronymic">отчество:</label>
+                  <input id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отество тоже">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-      <div class="name-form__wrapper">
-        <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="user-second-name">фамилия:</label>
-            <input class="data-form__second-name" id="user-second-name" type="text" name="user-second-name" placeholder="Укажите фамилию*">
-          </p>
-          <p>
-            <label for="user-first-name">имя:</label>
-            <input class="data-form__first-name" id="user-first-name" type="text" name="user-first-name" placeholder="Введите ваше имя*">
-          </p>
-          <p>
-            <label for="user-patronymic">отчество:</label>
-            <input class="data-form__patronymic" id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отество тоже">
-          </p>
-        </form>
-      </div>
+          <div class="attainment-form">
+            <fieldset class="items-form">
+              <legend class="description-form">ваши безбашенные достижения в путешествии</legend>
+              <ul>
+                <li class="description-form__checkbox">
+                  <label for="shark">Сделал сэлфи с акулой</label>
+                  <input class="visually-hidden" id="shark" type="checkbox" name="shark" checked>
+                  <span class="items-form__indicator--square"></span>
+                </li>
+                <li class="description-form__checkbox">
+                  <label for="beach">Обгорел на пляже</label>
+                  <input class="visually-hidden" id="beach" type="checkbox" name="beach" checked>
+                  <span class="items-form__indicator--square"></span>
+                </li>
+                <li class="description-form__checkbox">
+                  <label for="Chuck">Видел Чака Норриса</label>
+                  <input class="visually-hidden" id="Chuck" type="checkbox" name="Chuck">
+                  <span class="items-form__indicator--square"></span>
+                </li>
+                <li class="description-form__checkbox">
+                  <label for="souvenirs">Накупил сувениров</label>
+                  <input class="visually-hidden" id="souvenirs" type="checkbox" name="souvenirs">
+                  <span class="items-form__indicator--square"></span>
+                </li>
+                <li class="description-form__checkbox">
+                  <label for="tower">Удержал башню</label>
+                  <input class="visually-hidden" id="tower" type="checkbox" name="tower" checked>
+                  <span class="items-form__indicator--square"></span>
+                </li>
+                <li class="description-form__checkbox">
+                  <label for="hotel">Разгромил отель</label>
+                  <input class="visually-hidden" id="hotel" type="checkbox" name="hotel">
+                  <span class="items-form__indicator--square"></span>
+                </li>
+              </ul>
+              </fieldset>
+            </div>
 
-      <div class="attainment-form__wrapper">
-        <p class="description-form">ваши безбашенные достижения в путешествии</p>
-        <form class="items-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="shark" type="checkbox" name="shark" checked>
-              <span class="items-form__indicator--square"></span>
-              Сделал сэлфи с акулой
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="beach" type="checkbox" name="beach" checked>
-              <span class="items-form__indicator--square"></span>
-              Обгорел на пляже
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="Chuck" type="checkbox" name="Chuck">
-              <span class="items-form__indicator--square"></span>
-              Видел Чака Норриса
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="souvenirs" type="checkbox" name="souvenirs">
-              <span class="items-form__indicator--square"></span>
-              Накупил сувениров
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="tower" type="checkbox" name="tower" checked>
-              <span class="items-form__indicator--square"></span>
-              Удержал башню
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="hotel" type="checkbox" name="hotel">
-              <span class="items-form__indicator--square"></span>
-              Разгромил отель
-            </label>
-          </p>
-        </form>
-      </div>
+            <div class="contacts-form">
+              <fieldset class="data-form">
+                <ul>
+                  <li class="data-form__phone">
+                    <label for="user-phone">номер телефона</label>
+                    <input id="user-phone" type="number" name="user-phone" placeholder="Номер, пожалуйста">
+                  </li>
+                  <li class="data-form__email">
+                    <label for="user-email">адрес почты</label>
+                    <input id="user-email" type="email" name="user-email" placeholder="Введите почту*">
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
-      <div class="contacts-form__wrapper">
-        <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="user-phone">номер телефона</label>
-            <input class="data-form__phone" id="user-phone" type="number" name="user-phone" placeholder="Номер, пожалуйста">
-          </p>
-          <p>
-            <label for="user-email">адрес почты</label>
-            <input class="data-form__email" id="user-email" type="email" name="user-email" placeholder="Введите почту*">
-          </p>
-        </form>
-      </div>
+            <div class="application-form">
+              <fieldset class="items-form">
+                <legend class="description-form">с каким приложением путешествовали?</legend>
+                <ul>
+                  <li class="description-form__checkbox">
+                    <label for="iOS">Pink для iOS</label>
+                    <input class="visually-hidden" id="iOS" type="radio" name="iOS" checked>
+                    <span class="items-form__indicator--circle"></span>
+                  </li>
+                  <li class="description-form__checkbox">
+                    <label for="Android">Pink на Android</label>
+                    <input class="visually-hidden" id="Android" type="radio" name="Android">
+                    <span class="items-form__indicator--circle"></span>
+                  </li>
+                  <li class="description-form__checkbox">
+                    <label for="Windows">Windows Phone</label>
+                    <input class="visually-hidden" id="Windows" type="radio" name="Windows">
+                    <span class="items-form__indicator--circle"></span>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
-      <div class="application-form__wrapper">
-        <p class="description-form">с каким приложением путешествовали?</p>
-        <form class="items-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="iOS" type="radio" name="iOS" checked>
-              <span class="items-form__indicator--square"></span>
-              Pink для iOS
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="Android" type="radio" name="Android">
-              <span class="items-form__indicator--square"></span>
-              Pink на Android
-            </label>
-          </p>
-          <p>
-            <label class="description-form__checkbox">
-              <input class="visually-hidden" id="Windows" type="radio" name="Windows">
-              <span class="items-form__indicator--square"></span>
-              Windows Phone
-            </label>
-          </p>
-        </form>
-      </div>
+            <div class="review-form">
+              <fieldset class="data-form">
+                <legend class="description-form">опишите свои эмоции</legend>
+                <textarea name="review-form" id="review-form" cols="30" rows="10" placeholder="можно прям в красках, не стесняясь выражениях"></textarea>
+              </fieldset>
+            </div>
 
-      <div class="review-form__wrapper">
-        <p class="description-form">опишите свои эмоции</p>
-        <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
-          <textarea name="review-form" id="review-form" cols="30" rows="10" placeholder="можно прям в красках, не стесняясь выражениях"></textarea>
-        </form>
-      </div>
+            <div class="page-form__wrapper">
+              <button class="page-form__submit" type="submit">отправить форму</button>
+              <p class="page-form__required">*-обязательные поля</p>
+            </div>
+          </form>
+        </section>
+      </main>
 
-      <div class="page-form__wrapper">
-        <input class="page-form__submit" type="submit" value="отправить форму">
-        <p class="page-form__required">*-обязательные поля</p>
-      </div>
+      <footer class="page-footer">
+        <a class="logo page-footer__logo" href="index.html">
+          <svg></svg>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social-link social-link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+            </li>
+          </ul>
+        </div>
 
-    </main>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
 
-    <footer class="form-footer">
-      <a class="logo page-form__logo">
-        <svg></svg>
-      </a>
-      <div class="form-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social-link social-link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
-          </li>
-        </ul>
-      </div>
+      </footer>
 
-      <div class="form-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-
-    </footer>
-
-  </body>
-</html>
+    </body>
+    </html>
