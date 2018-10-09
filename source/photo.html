@@ -8,20 +8,20 @@
     <header class="page-header">
       <a class="page-header__logo" href="index.html">PINK</a>
       <nav class="main-nav">
-        <button class="page-header__toggle--open/close" type="button">Открыть меню
+        <button class="page-header__toggle visually-hidden" type="button">Открыть меню
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+          <ul class="main-nav__list cite-list">
+            <li class="cite-list__item">
               <a href="index.html">главная</a>
             </li>
-            <li class="main-nav__item--current-item">
+            <li class="cite-list__item cite-list__item--current">
               <a>фотографии</a>
             </li>
-            <li class="main-nav__item">
+            <li class="cite-list__item">
               <a href="form.html">конкурс</a>
             </li>
-            <li class="main-nav__item">
+            <li class="cite-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>
@@ -37,106 +37,104 @@
         <p class="slogan__banner">Взгляните на фотографии, которые выкладывают пользователи! Видите как нехватает ваших?</p>
       </div>
 
-      <section class="user-photo">
-        <ul>
-          <li>
-            <div class="user-photo__view-of-the-day__wrapper">
-              <p class="user-photo__view-of-the-day">панорама дня</p>
-            </div>
-            <blockquote class="user-photo__of-the-day">
-              <div class="user-photo__wrapper">
-                <img class="user-photo" src="http://placehold.it/150x100" width="320" height="200" alt="панорама">
+      <section class="user-post">
+        <ul class="user-post__list">
+          <li class="user-post__item user-post__item--of-the-day">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="320" height="200" alt="панорама">
+                <p class="user-post__view-of-the-day">панорама дня</p>
               </div>
-              <cite class="user-photo__author-name">Анна</cite>
-              <p class="user-photo__comment-date">(5 минут назад)</p>
-              <p class="user-photo__comment">Прыгать или нет? напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="like">
+              <cite class="user-post__author-name">Анна</cite>
+              <p class="user-post__comment-date">(5 минут назад)</p>
+              <p class="user-post__comment">Прыгать или нет? напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">215</span>
+                <span class="user-post__counter-like">215</span>
               </div>
             </blockquote>
           </li>
-          <li>
-            <blockquote class="user-photo__item">
-              <div class="user-photo__wrapper">
-                <img class="user-photo__image" src="http://placehold.it/150x100" width="280" height="200" alt="машина">
+          <li class="user-post__item">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="машина">
               </div>
-              <cite class="user-photo__author-name">Левон</cite>
-              <p class="user-photo__comment-date">(5 часов назад)</p>
-              <p class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="like">
+              <cite class="user-post__author-name">Левон</cite>
+              <p class="user-post__comment-date">(5 часов назад)</p>
+              <p class="user-post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">356</span>
+                <span class="user-post__counter-like">356</span>
               </div>
             </blockquote>
           </li>
-          <li>
-            <blockquote class="user-photo__item">
-              <div class="user-photo__wrapper">
-                <img class="user-photo__image" src="http://placehold.it/150x100" width="280" height="200" alt="барабанная установка">
+          <li class="user-post__item">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="барабанная установка">
               </div>
-              <cite class="user-photo__author-name">Антон</cite>
-              <p class="user-photo__comment-date">(12 часов назад)</p>
-              <p class="user-photo__comment">Соседи будут рады!</p>
-              <div class="like">
+              <cite class="user-post__author-name">Антон</cite>
+              <p class="user-post__comment-date">(12 часов назад)</p>
+              <p class="user-post__comment">Соседи будут рады!</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">666</span>
+                <span class="user-post__counter-like">666</span>
               </div>
             </blockquote>
           </li>
-          <li>
-            <blockquote class="user-photo__item">
-              <div class="user-photo__wrapper">
-                <img class="user-photo__image" src="http://placehold.it/150x100" width="280" height="200" alt="небо сквозь стеклянную крышу">
+          <li class="user-post__item">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="небо сквозь стеклянную крышу">
               </div>
-              <cite class="user-photo__author-name">Борис</cite>
-              <p class="user-photo__comment-date">(20 часов назад)</p>
-              <p class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="like">
+              <cite class="user-post__author-name">Борис</cite>
+              <p class="user-post__comment-date">(20 часов назад)</p>
+              <p class="user-post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">215</span>
+                <span class="user-post__counter-like">215</span>
               </div>
             </blockquote>
           </li>
-          <li>
-            <blockquote class="user-photo__item">
-              <div class="user-photo__wrapper">
-                <img class="user-photo__image" src="http://placehold.it/150x100" width="280" height="200" alt="кубанская бахча">
+          <li class="user-post__item">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="кубанская бахча">
               </div>
-              <cite class="user-photo__author-name">Сергей</cite>
-              <p class="user-photo__comment-date">(25 часов назад)</p>
-              <p class="user-photo__comment">Самая кубанская в мире!</p>
-              <div class="like">
+              <cite class="user-post__author-name">Сергей</cite>
+              <p class="user-post__comment-date">(25 часов назад)</p>
+              <p class="user-post__comment">Самая кубанская в мире!</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">4</span>
+                <span class="user-post__counter-like">4</span>
               </div>
             </blockquote>
           </li>
-          <li>
-            <blockquote class="user-photo__item">
-              <div class="user-photo__wrapper">
-                <img class="user-photo__image" src="http://placehold.it/150x100" width="280" height="200" alt="горы">
+          <li class="user-post__item">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="горы">
               </div>
-              <cite class="user-photo__author-name">Максим</cite>
-              <p class="user-photo__comment-date">(40 часов назад)</p>
-              <p class="user-photo__comment">Где снег-то?</p>
-              <div class="like">
+              <cite class="user-post__author-name">Максим</cite>
+              <p class="user-post__comment-date">(40 часов назад)</p>
+              <p class="user-post__comment">Где снег-то?</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">150</span>
+                <span class="user-post__counter-like">150</span>
               </div>
             </blockquote>
           </li>
-          <li>
-            <blockquote class="user-photo__item">
-              <div class="user-photo__wrapper">
-                <img class="user-photo__image" src="http://placehold.it/150x100" width="280" height="200" alt="крыло летящего самолёта">
+          <li class="user-post__item">
+            <blockquote class="user-post__post">
+              <div class="user-post__wrapper">
+                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="крыло летящего самолёта">
               </div>
-              <cite class="user-photo__author-name">Надежда</cite>
-              <p class="user-photo__comment-date">(45 часов назад)</p>
-              <p class="user-photo__comment">Всем GM и взаимне лайки!</p>
-              <div class="like">
+              <cite class="user-post__author-name">Надежда</cite>
+              <p class="user-post__comment-date">(45 часов назад)</p>
+              <p class="user-post__comment">Всем GM и взаимне лайки!</p>
+              <div class="user-post__like">
                 нравится:
-                <span class="user-photo__counter-like">2560</span>
+                <span class="user-post__counter-like">2560</span>
               </div>
             </blockquote>
           </li>
@@ -145,25 +143,26 @@
 
       <section class="upload-photo">
         <div class="upload-photo__banner-wrapper">
-          <p class="upload-photo__banner">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</p>
+          <p class="upload-photo__banner">Затмите их всех!</p>
+          <p class="upload-photo__banner">Выкладывайте всё, что накопилось в телефоне!</p>
         </div>
         <form class="items-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="items-form__uploud" >
             <img class="items-form__img" src="http://placehold.it/150x100" width="320" height="450" alt="Зимняя дорога">
             <input class="items-form__upload-img" id="user-upload-img" type="file" name="user-upload-img">
           </div>
-          <div class="items-form__filtres photo-filtres">
-            <div class="items-form__btn">
-              <span class="items-form__img-cut">
-                <button class="items-form__img-cut-btn" type="button">Обрезать</button>
-              </span>
-              <span class="items-form__color-effect">
-                <button class="items-form__color-effect-btn" type="button">Залить</button>
-              </span>
-              <span class="items-form__color-balance">
-                <button class="items-form__color-balance-btn" type="button">Балланс белого</button>
-              </span>
-            </div>
+          <div class="items-form__filtres">
+            <ul class="items-form__btn btn-filter">
+              <li class="btn-filter__items btn-filter__items--img-cut">
+                <button class="items-form--img-cut-btn" type="button">Обрезать</button>
+              </li>
+              <li class="btn-filter__items btn-filter__items--color-effect">
+                <button class="items-form--color-effect-btn" type="button">Залить</button>
+              </li>
+              <li class="btn-filter__items btn-filter__items--color-balance">
+                <button class="items-form--color-balance-btn" type="button">Балланс белого</button>
+              </li>
+            </ul>
             <span class="items-form__range">
               <input type="range" min="1" max="10">
             </span>
@@ -183,13 +182,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
           </li>
           <li class="social__item">
-            <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
           <li class="social__item">
-            <a class="social-link social-link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
           </li>
         </ul>
       </div>

@@ -8,17 +8,17 @@
     <header class="page-header">
       <a class="page-header__logo" href="index.html">PINK</a>
       <nav class="main-nav">
-        <button class="page-header__toggle--open/close" type="button">Открыть меню
+        <button class="page-header__toggle visually-hidden" type="button">Открыть меню
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+          <ul class="main-nav__list cite-list">
+            <li class="cite-list__item">
               <a href="index.html">главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="cite-list__item">
               <a href="photo.html">фотографии</a>
             </li>
-            <li class="main-navt__item--current-item">
+            <li class="cite-list__item cite-list__item--current">
               <a>конкурс</a>
             </li>
             <li class="main-nav__item">
@@ -35,20 +35,20 @@
     <main class="page-form">
       <section class="competition-feedback">
         <p class="competition-feedback__banner">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-        <form class="competition-feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="competition-feedback__form competition-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="name-form">
-            <fieldset class="data-form">
-              <ul>
-                <li class="data-form__second-name">
-                  <label for="user-second-name">фамилия:</label>
+            <fieldset class="competition-form__data-form">
+              <ul class="competition-form__list data-list">
+                <li class="data-list__item">
+                  <label class="data-list__second-name" for="user-second-name">фамилия:</label>
                   <input id="user-second-name" type="text" name="user-second-name" placeholder="Укажите фамилию*">
                 </li>
-                <li class="data-form__first-name">
-                  <label for="user-first-name">имя:</label>
+                <li class="data-list__item">
+                  <label class="data-list__first-name" for="user-first-name">имя:</label>
                   <input id="user-first-name" type="text" name="user-first-name" placeholder="Введите ваше имя*">
                 </li>
-                <li class="data-form__patronymic">
-                  <label for="user-patronymic">отчество:</label>
+                <li class="data-list__item">
+                  <label class="data-list__patronymic" for="user-patronymic">отчество:</label>
                   <input id="user-patronymic" type="text" name="user-patronymic" placeholder="Ну и отество тоже">
                 </li>
               </ul>
@@ -56,52 +56,46 @@
           </div>
 
           <div class="attainment-form">
-            <fieldset class="items-form">
-              <legend class="description-form">ваши безбашенные достижения в путешествии</legend>
-              <ul>
-                <li class="description-form__checkbox">
-                  <label for="shark">Сделал сэлфи с акулой</label>
+            <fieldset class="competition-form__attainment-form">
+              <legend class="competition-form__description-form">ваши безбашенные достижения в путешествии</legend>
+              <ul class="competition-form__list attainment-list">
+                <li class="attainment-list__item">
+                  <label class="attainment-list__checkbox" for="shark">Сделал сэлфи с акулой</label>
                   <input class="visually-hidden" id="shark" type="checkbox" name="shark" checked>
-                  <span class="items-form__indicator--square"></span>
                 </li>
-                <li class="description-form__checkbox">
-                  <label for="beach">Обгорел на пляже</label>
+                <li class="attainment-list__item">
+                  <label class="attainment-list__checkbox" for="beach">Обгорел на пляже</label>
                   <input class="visually-hidden" id="beach" type="checkbox" name="beach" checked>
-                  <span class="items-form__indicator--square"></span>
                 </li>
-                <li class="description-form__checkbox">
-                  <label for="Chuck">Видел Чака Норриса</label>
+                <li class="attainment-list__item">
+                  <label class="attainment-list__checkbox" for="Chuck">Видел Чака Норриса</label>
                   <input class="visually-hidden" id="Chuck" type="checkbox" name="Chuck">
-                  <span class="items-form__indicator--square"></span>
                 </li>
-                <li class="description-form__checkbox">
-                  <label for="souvenirs">Накупил сувениров</label>
+                <li class="attainment-list__item">
+                  <label class="attainment-list__checkbox" for="souvenirs">Накупил сувениров</label>
                   <input class="visually-hidden" id="souvenirs" type="checkbox" name="souvenirs">
-                  <span class="items-form__indicator--square"></span>
                 </li>
-                <li class="description-form__checkbox">
-                  <label for="tower">Удержал башню</label>
+                <li class="attainment-list__item">
+                  <label class="attainment-list__checkbox" for="tower">Удержал башню</label>
                   <input class="visually-hidden" id="tower" type="checkbox" name="tower" checked>
-                  <span class="items-form__indicator--square"></span>
                 </li>
-                <li class="description-form__checkbox">
-                  <label for="hotel">Разгромил отель</label>
+                <li class="attainment-list__item">
+                  <label class="competition-form__checkbox" for="hotel">Разгромил отель</label>
                   <input class="visually-hidden" id="hotel" type="checkbox" name="hotel">
-                  <span class="items-form__indicator--square"></span>
                 </li>
               </ul>
               </fieldset>
             </div>
 
-            <div class="contacts-form">
-              <fieldset class="data-form">
-                <ul>
-                  <li class="data-form__phone">
-                    <label for="user-phone">номер телефона</label>
+            <div class="user-contacts-form">
+              <fieldset class="competition-form__user-contacts-form">
+                <ul class="competition-form__list user-contacts-list">
+                  <li class="user-contacts-list__item">
+                    <label class="user-contacts-list__phone" for="user-phone">номер телефона</label>
                     <input id="user-phone" type="number" name="user-phone" placeholder="Номер, пожалуйста">
                   </li>
-                  <li class="data-form__email">
-                    <label for="user-email">адрес почты</label>
+                  <li class="user-contacts-list__item">
+                    <label class="user-contacts-list__email" for="user-email">адрес почты</label>
                     <input id="user-email" type="email" name="user-email" placeholder="Введите почту*">
                   </li>
                 </ul>
@@ -109,38 +103,35 @@
             </div>
 
             <div class="application-form">
-              <fieldset class="items-form">
-                <legend class="description-form">с каким приложением путешествовали?</legend>
-                <ul>
-                  <li class="description-form__checkbox">
-                    <label for="iOS">Pink для iOS</label>
+              <fieldset class="competition-form__application-form">
+                <legend class="application-form__description">с каким приложением путешествовали?</legend>
+                <ul class="competition-form__list application-list">
+                  <li class="application-list__item">
+                    <label class="application-list__radio" for="iOS">Pink для iOS</label>
                     <input class="visually-hidden" id="iOS" type="radio" name="iOS" checked>
-                    <span class="items-form__indicator--circle"></span>
                   </li>
-                  <li class="description-form__checkbox">
-                    <label for="Android">Pink на Android</label>
+                  <li class="application-list__item">
+                    <label class="application-list__radio" for="Android">Pink на Android</label>
                     <input class="visually-hidden" id="Android" type="radio" name="Android">
-                    <span class="items-form__indicator--circle"></span>
                   </li>
-                  <li class="description-form__checkbox">
-                    <label for="Windows">Windows Phone</label>
+                  <li class="application-list__item">
+                    <label class="application-list__radio" for="Windows">Windows Phone</label>
                     <input class="visually-hidden" id="Windows" type="radio" name="Windows">
-                    <span class="items-form__indicator--circle"></span>
                   </li>
                 </ul>
               </fieldset>
             </div>
 
             <div class="review-form">
-              <fieldset class="data-form">
-                <legend class="description-form">опишите свои эмоции</legend>
+              <fieldset class="competition-form__review-form">
+                <legend class="review-form__description">опишите свои эмоции</legend>
                 <textarea name="review-form" id="review-form" cols="30" rows="10" placeholder="можно прям в красках, не стесняясь выражениях"></textarea>
               </fieldset>
             </div>
 
-            <div class="page-form__wrapper">
-              <button class="page-form__submit" type="submit">отправить форму</button>
-              <p class="page-form__required">*-обязательные поля</p>
+            <div class="competition-form__wrapper">
+              <button class="competition-form__submit" type="submit">отправить форму</button>
+              <p class="competition-form__required">*-обязательные поля</p>
             </div>
           </form>
         </section>
@@ -153,13 +144,13 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
             </li>
             <li class="social__item">
-              <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
             </li>
             <li class="social__item">
-              <a class="social-link social-link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
             </li>
           </ul>
         </div>
