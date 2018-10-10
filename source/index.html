@@ -5,8 +5,156 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="logo page-header__logo">PINK</a>
+      <nav class="main-nav">
+        <button class="page-header__toggle visually-hidden" type="button">Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list cite-list">
+            <li class="cite-list__item cite-list__item--current">
+              <a>главная</a>
+            </li>
+            <li class="cite-list__item">
+              <a href="photo.hml">фотографии</a>
+            </li>
+            <li class="cite-list__item">
+              <a href="form.html">конкурс</a>
+            </li>
+            <li class="cite-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
+      <img class="page-poster" src="img/.jpg" width="320" height="300" alt="Постер раскрашивания серых будней">
+      <div class="downloads">
+        <a class="downloads__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <ul class="downloads__link-list">
+          <li class="downloads__available-apple">
+            <a href="https://www.apple.com/ru/itunes/"></a>
+          </li>
+          <li class="downloads__available-android">
+            <a href="https://www.android.com/"></a>
+          </li>
+          <li class="downloads__available-windows">
+            <a href="https://www.microsoft.com/ru-ru/store/b/home"></a>
+          </li>
+        </ul>
+        <p class="downloads__info">Доступно для iPhone, ipad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <section class="advantages">
+        <div class="advantages__slogan">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам  есть, что вам предложить!</p>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__items">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <img  class="advantages__grey-image" src="img/picture-smile.jpg" width="50" height="33" alt="серый">
+          </li>
+          <li class="advantages__items">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсте его смайликом или текстово подписью, что-бы усилить эффект</p>
+            <img  class="advantages__pink-image" src="img/picture-smile.jpg" width="50" height="33" alt="розовый">
+          </li>
+          <li class="advantages__items">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставте лайки, комментируйте, делитесь фотогафиями с друзьями и заводите новых</p>
+            <img  class="advantages__smile-image" src="img/picture-smile.jpg" width="50" height="33" alt="смайлик">
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews__list  slider__list">
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="tariff">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariff__wrapper slider">
+          <table class="tariff__list">
+            <thead class="tariff__list-head">
+              <tr>
+                <td class="tariff__field">Стандарт</td>
+                <td class="tariff__value">3.99</td>
+                <td class="tariff__field">Стандарт</td>
+                <td class="tariff__value">3.99 USD</td>
+                <td class="tariff__field">Стандарт</td>
+                <td class="tariff__value">3.99</td>
+              </tr>
+            </thead>
+            <tbody class="tariff__list-body">
+              <tr>
+                <td class="tariff__field">розовый фильтр</td>
+                <td class="tariff__field">розовый фильтр</td>
+                <td class="tariff__field">розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="tariff__field">смайлики</td>
+                <td class="tariff__field">смайлики</td>
+                <td class="tariff__field">смайлики</td>
+              </tr>
+              <tr>
+                <td class="tariff__field">комментарии</td>
+                <td class="tariff__field">комментарии</td>
+                <td class="tariff__field">комментарии</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="our-contacts">
+        <h2>Остались вопросы?</h2>
+        <h2>Свяжитесь с нами!</h2>
+        <ul class="our-contacts__list">
+          <li class="our-contacts__item">
+            <h3 class="our-contacts__title">Звоните:</h3>
+            <a class="our-contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="our-contacts__item">
+            <h3 class="our-contacts__title">Пишите:</h3>
+            <a class="our-contacts__data" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="our-contacts__item">
+            <h3 class="our-contacts__title">Приезжайте в гости:</h3>
+            <a class="our-contacts__data" href="https://yandex.ru/maps/-/CBBRM8DvXA">Большая Конюшенная улица, 19/8</a>
+          </li>
+        </ul>
+        <p>
+          <img src="img/map.jpg" width="320" height="200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+      </section>
+    </main>
 
   </body>
 </html>
