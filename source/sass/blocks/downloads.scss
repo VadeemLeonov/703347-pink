@@ -1,0 +1,28 @@
+.downloads {
+	border: 2px solid #FF0099;
+
+	color: rgb(255,255,255);
+	background-color: rgb(40,54,69);
+}
+
+.downloads__btn {
+	@include font-bold;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: none;
+
+	color: rgb(255,255,255);
+	background-color: rgb(40,54,69);
+}
+
+.downloads__info {
+	@include font-light;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: none;
+	text-align: center;
+}
+
+.downloads__link-list {
+	@include list-reset;
+}

@@ -1,0 +1,18 @@
+.competition-feedback {
+	border: 2px solid #FF0099;
+
+	@include font-regular;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: none;
+	text-align: center;
+}
+
+.competition-feedback__banner {
+	color: rgb(40,54,69);
+	background-color: rgb(255,255,255);
+}
+
+.competition-form__list {
+	@include list-reset;
+}

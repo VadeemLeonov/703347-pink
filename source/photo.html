@@ -2,20 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Пинк, фото</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">PINK</a>
+      <div class="logo page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="50px" height="50px" alt="PINK">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="page-header__toggle visually-hidden" type="button">Открыть меню
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list cite-list">
-            <li class="cite-list__item">
+            <li class="cite-list__item cite-list">
               <a href="index.html">главная</a>
             </li>
-            <li class="cite-list__item cite-list__item--current">
+            <li class="cite-list__item__item--current">
               <a>фотографии</a>
             </li>
             <li class="cite-list__item">
@@ -42,7 +48,7 @@
           <li class="user-post__item user-post__item--of-the-day">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="320" height="200" alt="панорама">
+                <img class="user-post__photo" src="img/panorama-mobile@1x.jpg" width="320" height="200" alt="панорама">
                 <p class="user-post__view-of-the-day">панорама дня</p>
               </div>
               <cite class="user-post__author-name">Анна</cite>
@@ -57,7 +63,7 @@
           <li class="user-post__item">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="машина">
+                <img class="user-post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="200" alt="машина">
               </div>
               <cite class="user-post__author-name">Левон</cite>
               <p class="user-post__comment-date">(5 часов назад)</p>
@@ -71,7 +77,7 @@
           <li class="user-post__item">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="барабанная установка">
+                <img class="user-post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="200" alt="барабанная установка">
               </div>
               <cite class="user-post__author-name">Антон</cite>
               <p class="user-post__comment-date">(12 часов назад)</p>
@@ -85,7 +91,7 @@
           <li class="user-post__item">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="небо сквозь стеклянную крышу">
+                <img class="user-post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="200" alt="небо сквозь стеклянную крышу">
               </div>
               <cite class="user-post__author-name">Борис</cite>
               <p class="user-post__comment-date">(20 часов назад)</p>
@@ -99,7 +105,7 @@
           <li class="user-post__item">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="кубанская бахча">
+                <img class="user-post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="200" alt="кубанская бахча">
               </div>
               <cite class="user-post__author-name">Сергей</cite>
               <p class="user-post__comment-date">(25 часов назад)</p>
@@ -113,7 +119,7 @@
           <li class="user-post__item">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="горы">
+                <img class="user-post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="200" alt="горы">
               </div>
               <cite class="user-post__author-name">Максим</cite>
               <p class="user-post__comment-date">(40 часов назад)</p>
@@ -127,7 +133,7 @@
           <li class="user-post__item">
             <blockquote class="user-post__post">
               <div class="user-post__wrapper">
-                <img class="user-post__photo" src="http://placehold.it/150x100" width="280" height="200" alt="крыло летящего самолёта">
+                <img class="user-post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="200" alt="крыло летящего самолёта">
               </div>
               <cite class="user-post__author-name">Надежда</cite>
               <p class="user-post__comment-date">(45 часов назад)</p>
@@ -148,7 +154,7 @@
         </div>
         <form class="items-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="items-form__uploud" >
-            <img class="items-form__img" src="http://placehold.it/150x100" width="320" height="450" alt="Зимняя дорога">
+            <img class="items-form__img" src="img/photo-road-mobile@1x.jpg" width="320" height="450" alt="Зимняя дорога">
             <input class="items-form__upload-img" id="user-upload-img" type="file" name="user-upload-img">
           </div>
           <div class="items-form__filtres">

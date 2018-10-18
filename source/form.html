@@ -2,26 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк, форма</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">PINK</a>
+      <div class="logo page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="50px" height="50px" alt="PINK">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="page-header__toggle visually-hidden" type="button">Открыть меню
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list cite-list">
-            <li class="cite-list__item">
+            <li class="cite-list__item cite-list">
               <a href="index.html">главная</a>
             </li>
             <li class="cite-list__item">
               <a href="photo.html">фотографии</a>
             </li>
-            <li class="cite-list__item cite-list__item--current">
+            <li class="cite-list__item__item--current">
               <a>конкурс</a>
             </li>
-            <li class="main-nav__item">
+            <li class="cite-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>

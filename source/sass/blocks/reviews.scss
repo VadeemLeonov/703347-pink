@@ -1,0 +1,23 @@
+.reviews {
+	border: 2px solid #FF0099;
+}
+
+.reviews__author-name {
+	@include font-bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: none;
+	text-align: center;
+}
+
+.reviews__list {
+	@include font-regular;
+	font-size: 14px;
+	line-height: 30px;
+	text-transform: none;
+	text-align: center;
+
+	color: rgb(40,54,69);
+	background-color: rgb(255,255,255);
+}

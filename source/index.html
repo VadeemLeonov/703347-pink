@@ -2,11 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo">PINK</a>
+      <div class="logo page-header__logo">
+        <a>
+          <img src="img/logo-pink-white-mobile.svg" width="50px" height="50px" alt="PINK">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="page-header__toggle visually-hidden" type="button">Открыть меню
         </button>
@@ -16,7 +22,7 @@
               <a>главная</a>
             </li>
             <li class="cite-list__item">
-              <a href="photo.hml">фотографии</a>
+              <a href="photo.html">фотографии</a>
             </li>
             <li class="cite-list__item">
               <a href="form.html">конкурс</a>
@@ -27,13 +33,15 @@
           </ul>
         </div>
       </nav>
+      <div class="headline">
+        <h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
+        <img class="headline__poster" src="img/iphone-hand-mobile@1x.png" width="250px" height="290px" alt="Постер раскрашивания серых будней">
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
-      <img class="page-poster" src="img/.jpg" width="320" height="300" alt="Постер раскрашивания серых будней">
       <div class="downloads">
-        <a class="downloads__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <a class="downloads__btn" href="https://www.apple.com/ru/itunes/">Скачать Приложение</a>
         <ul class="downloads__link-list">
           <li class="downloads__available-apple">
             <a href="https://www.apple.com/ru/itunes/"></a>
@@ -66,7 +74,7 @@
           <li class="advantages__items">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставте лайки, комментируйте, делитесь фотогафиями с друзьями и заводите новых</p>
-            <img  class="advantages__smile-image" src="img/picture-smile.jpg" width="50" height="33" alt="смайлик">
+            <img  class="advantages__smile-image" src="img/iphone-screen-mobile@1x.png" width="150px" height="250px" alt="смайлик">
           </li>
         </ul>
       </section>
@@ -100,11 +108,11 @@
           <table class="tariff__list">
             <thead class="tariff__list-head">
               <tr>
-                <td class="tariff__field">Стандарт</td>
+                <td class="tariff__name">Стандарт</td>
                 <td class="tariff__value">3.99</td>
-                <td class="tariff__field">Стандарт</td>
+                <td class="tariff__name">Стандарт</td>
                 <td class="tariff__value">3.99 USD</td>
-                <td class="tariff__field">Стандарт</td>
+                <td class="tariff__name">Стандарт</td>
                 <td class="tariff__value">3.99</td>
               </tr>
             </thead>
@@ -134,20 +142,20 @@
         </p>
       </section>
       <section class="our-contacts">
-        <h2>Остались вопросы?</h2>
-        <h2>Свяжитесь с нами!</h2>
+        <p>Остались вопросы?</p>
+        <p>Свяжитесь с нами!</p>
         <ul class="our-contacts__list">
           <li class="our-contacts__item">
-            <h3 class="our-contacts__title">Звоните:</h3>
+            <p class="our-contacts__title">Звоните:</p>
             <a class="our-contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="our-contacts__item">
-            <h3 class="our-contacts__title">Пишите:</h3>
+            <p class="our-contacts__title">Пишите:</p>
             <a class="our-contacts__data" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="our-contacts__item">
-            <h3 class="our-contacts__title">Приезжайте в гости:</h3>
-            <a class="our-contacts__data" href="https://yandex.ru/maps/-/CBBRM8DvXA">Большая Конюшенная улица, 19/8</a>
+            <p class="our-contacts__title">Приезжайте в гости:</p>
+            <a class="our-contacts__data" href="https://yandex.ru/maps/-/CBBRM8DvXA">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
         <p>

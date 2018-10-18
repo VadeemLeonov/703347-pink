@@ -1,0 +1,12 @@
+.main-nav a {
+	color: rgb(255,255,255);
+	background-color: rgb(40,54,69);
+}
+
+.main-nav__list {
+	@include list-reset;
+}
+
+.main-nav__wrapper {
+	border: 2px solid #FF0099;
+}

@@ -1,0 +1,16 @@
+.page-footer {
+	border: 2px solid #FF0099;
+}
+
+.social__list {
+	@include list-reset;
+	
+}
+
+.copyright__text {
+	@include font-regular;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: none;
+	text-align: center;
+}
