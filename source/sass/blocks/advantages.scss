@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
 
-  border: 2px solid #FF0099;
+  border: 2px solid #ff0099;
 }
 
 .advantages__list {
   @include list-reset;
-
   @include font-light;
   font-size: 14px;
   line-height: 24px;
@@ -25,6 +24,6 @@
   text-transform: none;
   text-align: center;
 
-  color: rgb(40,54,69);
-  background-color: rgb(255,255,255);
+  color: rgb(40, 54, 69);
+  background-color: rgb(255, 255, 255);
 }
