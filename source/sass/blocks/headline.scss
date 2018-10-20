@@ -1,4 +1,6 @@
 .headline {
+  display: flex;
+  margim: 0 auto;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
 
@@ -17,4 +19,9 @@
 
 	color: rgb(255,255,255);
 	background-color: rgb(40,54,69);
+}
+
+.headline__poster {
+  position: relative;
+  margin-top: 140px;
 }
