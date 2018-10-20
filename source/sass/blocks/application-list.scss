@@ -1,9 +1,9 @@
 .application-list__item {
-	@include font-regular;
-	font-size: 18px;
-	line-height: 30px;
-	text-transform: none;
-	text-align: center;
+  @include font-regular;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
 
-	color: rgb(40,54,69);
+  color: rgb(40,54,69);
 }

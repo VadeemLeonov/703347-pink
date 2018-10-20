@@ -1,19 +1,19 @@
 .page-header {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	@include font-bold;
-	font-size: 18px;
-	line-height: 30px;
-	text-transform: uppercase;
-	text-align: center;
+  @include font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
 
-	color: rgb(255,255,255);
-	background-color: rgb(40,54,69);
-	border: 2px solid #FF0099;
+  color: rgb(255,255,255);
+  background-color: rgb(40,54,69);
+  border: 2px solid #FF0099;
 }
 
 .page-header__logo {
-	color: rgb(255,255,255);
-	background-color: rgb(40,54,69);
+  color: rgb(255,255,255);
+  background-color: rgb(40,54,69);
 }

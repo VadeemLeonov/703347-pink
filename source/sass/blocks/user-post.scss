@@ -1,51 +1,51 @@
 .user-post {
-	border: 2px solid #FF0099;
+  border: 2px solid #FF0099;
 }
 
 .user-post__list {
-	@include list-reset;
+  @include list-reset;
 }
 
 .user-post__view-of-the-day {
-	@include font-bold;
-	font-size: 12px;
-	line-height: 24px;
-	text-transform: uppercase;
-	text-align: center;
+  @include font-bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
 
-	color: rgb(255,255,255);
-	background-color: rgb(40,54,69);
+  color: rgb(255,255,255);
+  background-color: rgb(40,54,69);
 }
 
 .user-post__author-name {
-	@include font-bold;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: none;
-	text-align: center;
+  @include font-bold;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
 }
 
 .user-post__post {
-	color: rgb(40,54,69);
-	background-color: rgb(235, 237, 239);
+  color: rgb(40,54,69);
+  background-color: rgb(235, 237, 239);
 }
 
 .user-post__comment-date {
-	@include font-light;
-	font-size: 14px;
-	line-height: 30px;
-	text-transform: none;
-	text-align: center;
+  @include font-light;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
 
-	color: rgb(169, 169, 169);
+  color: rgb(169, 169, 169);
 }
 
 .user-post__like {
-	@include font-regular;
-	font-size: 12px;
-	line-height: 24px;
-	text-transform: uppercase;
-	text-align: center;
+  @include font-regular;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
 
-	color: rgb(210,40,86);
+  color: rgb(210,40,86);
 }

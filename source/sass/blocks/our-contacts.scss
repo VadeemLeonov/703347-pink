@@ -1,35 +1,35 @@
 .our-contacts {
-	border: 2px solid #FF0099;
+  border: 2px solid #FF0099;
 
-	@include font-light;
-	font-size: 24px;
-	line-height: 30px;
-	text-transform: none;
-	text-align: center;
+  @include font-light;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
 
-	color: rgb(40,54,69);
-	background-color: rgb(255,255,255);
+  color: rgb(40,54,69);
+  background-color: rgb(255,255,255);
 }
 
 .our-contacts__list {
-	@include list-reset;
+  @include list-reset;
 }
 
 .our-contacts__title {
-	@include font-bold;
-	font-size: 18px;
-	line-height: 30px;
-	text-transform: none;
-	text-align: center;
+  @include font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
 }
 
 .our-contacts__data {
-	@include font-light;
-	font-size: 24px;
-	line-height: 30px;
-	text-transform: none;
-	text-align: center;
+  @include font-light;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
 
-	color: rgb(210,40,86);
-	background-color: rgb(255,255,255);
+  color: rgb(210,40,86);
+  background-color: rgb(255,255,255);
 }
