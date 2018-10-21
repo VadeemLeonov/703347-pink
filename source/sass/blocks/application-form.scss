@@ -1,8 +1,8 @@
 .application-form {
-  background-color: rgb(235, 237, 239);
+  background-color: $backgraund2;
 }
 
 .application-form__description {
   text-transform: uppercase;
-  color: rgb(210, 40, 86);
+  color: $highlight;
 }

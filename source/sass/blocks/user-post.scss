@@ -13,8 +13,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: rgb(255, 255, 255);
-  background-color: rgb(40, 54, 69);
+  color: $backgraund1;
+  background-color: $backgraund-main;
 }
 
 .user-post__author-name {
@@ -26,8 +26,8 @@
 }
 
 .user-post__post {
-  color: rgb(40, 54, 69);
-  background-color: rgb(235, 237, 239);
+  color: $backgraund-main;
+  background-color: $backgraund2;
 }
 
 .user-post__comment-date {
@@ -37,7 +37,7 @@
   text-transform: none;
   text-align: center;
 
-  color: rgb(169, 169, 169);
+  color: $comment-date;
 }
 
 .user-post__like {
@@ -47,5 +47,5 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: rgb(210, 40, 86);
+  color: $highlight;
 }

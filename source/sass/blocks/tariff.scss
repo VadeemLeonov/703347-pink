@@ -1,17 +1,17 @@
 .tariff {
   border: 2px solid #ff0099;
-  background-color: rgb(235, 237, 239);
+  background-color: $backgraund2;
 }
 
 .tariff__name {
   @include font-bold;
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercese;
+  text-transform: uppercase;
   text-align: center;
 
-  color: rgb(40, 54, 69);
-  background-color: rgb(255, 255, 255);
+  color: $backgraund-main;
+  background-color: $backgraund1;
 }
 
 .tariff__value {
@@ -21,8 +21,8 @@
   text-transform: none;
   text-align: center;
 
-  color: rgb(40, 54, 69);
-  background-color: rgb(255, 255, 255);
+  color: $backgraund-main;
+  background-color: $backgraund1;
 }
 
 .tariff__field {
@@ -32,6 +32,6 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: rgb(40, 54, 69);
-  background-color: rgb(255, 255, 255);
+  color: $backgraund-main;
+  background-color: $backgraund1;
 }

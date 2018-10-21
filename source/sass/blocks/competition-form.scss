@@ -9,7 +9,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: rgb(210, 40, 86);
+  color: $highlight;
 }
 
 .competition-form__submit {
@@ -19,7 +19,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: rgb(255, 255, 255);
+  color: $backgraund1;
+  background-color: $btn-submit;
 }
 
 .competition-form__required {
