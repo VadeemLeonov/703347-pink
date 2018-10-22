@@ -1,0 +1,12 @@
+.upload-photo {
+  border: 2px solid #ff0099;
+}
+
+.items-form {
+  color: $backgraund-main;
+  background-color: $backgraund2;
+}
+
+.items-form__btn {
+  @include list-reset;
+}

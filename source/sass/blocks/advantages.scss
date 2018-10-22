@@ -1,0 +1,29 @@
+.advantages {
+  margin: 0;
+  padding: 0;
+
+  border: 2px solid #ff0099;
+}
+
+.advantages__list {
+  @include list-reset;
+  @include font-light;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+  text-align: center;
+
+  color: $backgraund-main;
+  background-color: $backgraund2;
+}
+
+.advantages__slogan {
+  @include font-light;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
+
+  color: $backgraund-main;
+  background-color: $backgraund1;
+}

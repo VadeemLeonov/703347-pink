@@ -1,0 +1,24 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin font-regular {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-light {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-bold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

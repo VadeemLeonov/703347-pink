@@ -1,0 +1,51 @@
+.user-post {
+  border: 2px solid #ff0099;
+}
+
+.user-post__list {
+  @include list-reset;
+}
+
+.user-post__view-of-the-day {
+  @include font-bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $backgraund1;
+  background-color: $backgraund-main;
+}
+
+.user-post__author-name {
+  @include font-bold;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
+}
+
+.user-post__post {
+  color: $backgraund-main;
+  background-color: $backgraund2;
+}
+
+.user-post__comment-date {
+  @include font-light;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
+
+  color: $comment-date;
+}
+
+.user-post__like {
+  @include font-regular;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $highlight;
+}
