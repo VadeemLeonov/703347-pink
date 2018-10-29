@@ -4,7 +4,6 @@
   width: 280px;
   display: flex;
   flex-direction: column;
-  
   height: 200px;
 
   color: $backgraund1;
@@ -44,7 +43,7 @@
     margin-top: -210px;
     width: 300px;
     align-items: flex-start;
-  } 
+  }
 }
 
 @media (min-width: $desktop-width) {
