@@ -33,3 +33,23 @@
   color: $highlight;
   background-color: $backgraund1;
 }
+
+@media (min-width: $tablet-width) {
+  .our-contacts__appeal {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .our-contacts__headline {
+    @include font-light;
+    font-weight: 100;
+    font-size: 42px;
+    line-height: 34px;
+    text-transform: none;
+  }
+
+  .our-contacts__list {
+    width: 660px;
+    margin: 0 auto;
+  }
+}

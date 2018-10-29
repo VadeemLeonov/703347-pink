@@ -1,5 +1,13 @@
 .competition-form {
+  width: 320px;
+  margin: 0 auto;
+
   border: 2px solid #ff0099;
+}
+
+.competition-feedback__banner {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .competition-form__description-form {
@@ -25,8 +33,25 @@
 
 .competition-form__required {
   @include font-regular;
+  
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .competition-form {
+    width: 660px;
+  }
+
+  .competition-feedback__banner {
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-form {
+    width: 960px;
+  }
 }

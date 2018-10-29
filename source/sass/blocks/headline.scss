@@ -1,13 +1,14 @@
 .headline {
-  display: flex;
+  width: 320px;
   margin: 0 auto;
+  height: 400px;
+
+  display: flex;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 0 -70px;
 
   border: 2px solid #ff0099;
-
-  min-width: 320px;
-  min-height: 400px;
 }
 
 .headline__text {
@@ -22,5 +23,37 @@
 
 .headline__poster {
   position: relative;
-  margin-top: 140px;
+  margin-top: 125px;
+}
+
+@media (min-width: $tablet-width) {
+  .headline {
+    width: 660px;
+    margin: 0;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headline__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    
+  }
+
+  .headline__poster {
+    margin-left: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .headline {
+    width: auto;
+    height: 740px;
+    background-image: none;
+  }
+
+  .headline__wrapper {
+    width: 940px;
+  }
 }
