@@ -2,3 +2,15 @@
   text-transform: uppercase;
   color: $highlight;
 }
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    width: 100%;
+  }
+}

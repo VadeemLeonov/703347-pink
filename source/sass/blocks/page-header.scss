@@ -1,6 +1,4 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   width: 320px;
   margin: 0 auto;
 
@@ -20,7 +18,6 @@
   align-items: center;
   height: 40px;
   color: $backgraund1;
-  background-color: $backgraund-main;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,11 +36,12 @@
     width: auto;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 0;
     background-size: cover;
   }
 
   .page-header__logo {
     height: 80px;
+    padding-left: 460px;
   }
 }

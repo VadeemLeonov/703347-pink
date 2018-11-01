@@ -6,3 +6,18 @@
   text-transform: uppercase;
   color: $highlight;
 }
+
+@media (min-width: $tablet-width) {
+  .application-form {
+    order: 1;
+
+    background-color: $backgraund1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-form {
+    width: 440px;
+    margin-left: auto;
+  }
+}

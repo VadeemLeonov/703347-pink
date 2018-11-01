@@ -3,6 +3,62 @@
 }
 
 .user-contacts-list__item {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   color: $highlight;
+}
+
+.user-contacts-form__description-form {
+  @include font-regular;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $highlight;
+}
+
+.user-contacts-list__item input {
+  width: 100%;
+  min-height: 58px;
+}
+
+@media (max-width: $mobile-only) {
+  .user-contacts-form__description-form{
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-contacts-form {
+    order: 2;
+  }
+
+  .user-contacts-list__item input {
+    padding-left: 18px;
+
+    @include font-regular;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: none;
+
+    color: $backgraund-main;
+  }
+
+  .user-contacts-list__item {
+    flex-direction: column-reverse;
+    margin: 25px 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-contacts-form {
+    width: 100%;
+  }
+
+  .user-contacts-list {
+    display: flex;
+    flex-direction: row;
+  }
 }
