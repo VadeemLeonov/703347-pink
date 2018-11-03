@@ -1,3 +1,18 @@
 .page-main {
+  width: 320px;
+  margin: 0 auto;
+
   border: 2px solid #ff0099;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: auto;
+  }
 }

@@ -1,6 +1,13 @@
 .tariff {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   border: 2px solid #ff0099;
   background-color: $backgraund2;
+}
+
+.tariff__list {
+  margin: 0 auto;
 }
 
 .tariff__name {
@@ -34,4 +41,16 @@
 
   color: $backgraund-main;
   background-color: $backgraund1;
+}
+
+@media (min-width: $tablet-width) {
+  .tariff__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .tariff {
+    width: auto;
+    margin: 0;
+  }
 }

@@ -2,3 +2,16 @@
   border: 2px solid #ff0099;
   background-color: $backgraund2;
 }
+
+@media (min-width: $tablet-width) {
+  .attainment-form {
+    order: 3;
+    background-color: $backgraund1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attainment-form {
+    width: 100%;
+  }
+}

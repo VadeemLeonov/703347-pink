@@ -1,4 +1,7 @@
 .reviews {
+  width: 320px;
+  margin: 0 auto;
+
   border: 2px solid #ff0099;
 }
 
@@ -20,4 +23,21 @@
 
   color: $backgraund-main;
   background-color: $backgraund1;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: auto;
+  }
 }

@@ -8,34 +8,39 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo page-header__logo">
-        <a>
-          <img src="img/logo-pink-white-mobile.svg" width="50px" height="50px" alt="PINK">
-        </a>
-      </div>
-      <nav class="main-nav">
-        <button class="page-header__toggle visually-hidden" type="button">Открыть меню
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list cite-list">
-            <li class="cite-list__item cite-list__item--current">
+          <div class="logo page-header__logo">
+            <a>
+              <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="PINK">
+            </a>
+          </div>
+          <button class="page-header__toggle visually-hidden" type="button">Открыть меню
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
               <a>главная</a>
             </li>
-            <li class="cite-list__item">
+            <li class="site-list__item">
               <a href="photo.html">фотографии</a>
             </li>
-            <li class="cite-list__item">
+            <li class="site-list__item">
               <a href="form.html">конкурс</a>
             </li>
-            <li class="cite-list__item">
+            <li class="site-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="headline">
-        <h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
-        <img class="headline__poster" src="img/iphone-hand-mobile@1x.png" width="250px" height="290px" alt="Постер раскрашивания серых будней">
+        <div class="headline__wrapper">
+          <h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней</h1>
+          <img class="headline__poster" src="img/iphone-hand-mobile@1x.png" width="250px" height="290px" alt="Постер раскрашивания серых будней">
+        </div>
       </div>
     </header>
 
@@ -64,12 +69,12 @@
           <li class="advantages__items">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            <img  class="advantages__grey-image" src="img/picture-smile.jpg" width="50" height="33" alt="серый">
+            <img  class="advantages__grey-image" src="img/picture-smile.png" width="50" height="33" alt="серый">
           </li>
           <li class="advantages__items">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсте его смайликом или текстово подписью, что-бы усилить эффект</p>
-            <img  class="advantages__pink-image" src="img/picture-smile.jpg" width="50" height="33" alt="розовый">
+            <img  class="advantages__pink-image" src="img/picture-smile.png" width="50" height="33" alt="розовый">
           </li>
           <li class="advantages__items">
             <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -77,6 +82,16 @@
             <img  class="advantages__smile-image" src="img/iphone-screen-mobile@1x.png" width="150px" height="250px" alt="смайлик">
           </li>
         </ul>
+        <div class="advantages__24-hours">
+          <div class="advantages__timer">
+            <img src="img/icon-timer.svg" width="260px" height="660px" alt="24 hours">
+          </div>
+          <div class="advantages__footnote">
+            <h3 class="advantages__footnote-effect">Эффект <br>на 24 часа!</h3>
+            <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="https://life.ru/t/%D0%BD%D0%B0%D1%83%D0%BA%D0%B0/944066/fienomien_britanskikh_uchionykh_zachiem_oni_dielaiut_svoi_biespolieznyie_otkrytiia">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -84,14 +99,7 @@
           <div class="reviews__list  slider__list">
             <blockquote class="reviews__item  slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
-            </blockquote>
-            <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
-            </blockquote>
-            <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <cite class="reviews__author-occupation">25 лет, водитель трамвая</cite>
               <p class="reviews__text">"Это приложение перевернуло мой мир, и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в коментариях к выложенной фотографии!"</p>
             </blockquote>
           </div>
@@ -108,42 +116,52 @@
           <table class="tariff__list">
             <thead class="tariff__list-head">
               <tr>
-                <td class="tariff__name">Стандарт</td>
-                <td class="tariff__value">3.99</td>
-                <td class="tariff__name">Стандарт</td>
-                <td class="tariff__value">3.99 USD</td>
-                <td class="tariff__name">Стандарт</td>
-                <td class="tariff__value">3.99</td>
+                <td class="tariff__name tariff__name--empty">
+                </td>
+                <td class="tariff__name">База
+                  <p class="tariff__value">1.99 USD</p>
+                </td>
+                <td class="tariff__name">Стандарт
+                  <p class="tariff__value">3.99 USD</p>
+                </td>
+                <td class="tariff__name">Анлим
+                  <p class="tariff__value">9.99 USD</p>
+                </td>
               </tr>
             </thead>
             <tbody class="tariff__list-body">
               <tr>
                 <td class="tariff__field">розовый фильтр</td>
-                <td class="tariff__field">розовый фильтр</td>
-                <td class="tariff__field">розовый фильтр</td>
+                <td class="tariff__field">ok</td>
+                <td class="tariff__field">ok</td>
+                <td class="tariff__field">ok</td>
               </tr>
               <tr>
                 <td class="tariff__field">смайлики</td>
-                <td class="tariff__field">смайлики</td>
-                <td class="tariff__field">смайлики</td>
+                <td class="tariff__field">no</td>
+                <td class="tariff__field">ok</td>
+                <td class="tariff__field">ok</td>
               </tr>
               <tr>
                 <td class="tariff__field">комментарии</td>
-                <td class="tariff__field">комментарии</td>
-                <td class="tariff__field">комментарии</td>
+                <td class="tariff__field">no</td>
+                <td class="tariff__field">no</td>
+                <td class="tariff__field">ok</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="reviews__toggles slider__toggles">
+        <p class="tariff__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
       </section>
       <section class="our-contacts">
-        <p>Остались вопросы?</p>
-        <p>Свяжитесь с нами!</p>
+        <div class="our-contacts__appeal">
+          <p class="our-contacts__headline">Остались вопросы?</p>
+          <p class="our-contacts__headline">Свяжитесь с нами!</p>
+        </div>
         <ul class="our-contacts__list">
           <li class="our-contacts__item">
             <p class="our-contacts__title">Звоните:</p>
@@ -164,5 +182,30 @@
       </section>
     </main>
 
+    <footer class="page-footer page-footer__index">
+      <div class="page-footer__wrapper">
+        <a class="logo page-footer__logo" href="index.html">
+          <svg></svg>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
   </body>
-</html>
+  </html>

@@ -1,6 +1,6 @@
 .page-header {
-  margin: 0;
-  padding: 0;
+  width: 320px;
+  margin: 0 auto;
 
   @include font-bold;
   font-size: 18px;
@@ -14,6 +14,34 @@
 }
 
 .page-header__logo {
+  display: flex;
+  align-items: center;
+  height: 40px;
   color: $backgraund1;
-  background-color: $backgraund-main;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: auto;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+  }
+
+  .page-header__logo {
+    height: 80px;
+    padding-left: 460px;
+  }
 }

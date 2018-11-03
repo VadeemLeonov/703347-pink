@@ -1,9 +1,16 @@
 .user-post {
+  width: 320px;
+  margin: 0 auto;
+
   border: 2px solid #ff0099;
 }
 
 .user-post__list {
   @include list-reset;
+}
+
+.user-post__item {
+  width: 320px;
 }
 
 .user-post__view-of-the-day {
@@ -48,4 +55,22 @@
   text-align: center;
 
   color: $highlight;
+}
+
+@media (min-width: $tablet-width) {
+  .user-post {
+    width: 660px;
+  }
+
+  .user-post__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-post {
+    width: 960px;
+  }
 }
