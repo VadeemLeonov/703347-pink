@@ -1,10 +1,11 @@
 .downloads {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 28px;
+  padding-bottom: 17px;
   width: 280px;
   display: flex;
   flex-direction: column;
-  height: 200px;
 
   color: $backgraund1;
   background-color: $backgraund-main;
@@ -16,7 +17,8 @@
   line-height: 18px;
   text-transform: none;
 
-  padding: 10px;
+  padding: 18px;
+  width: 240px;
   border: 3px solid #ffffff;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -43,6 +45,7 @@
     margin-top: -210px;
     width: 300px;
     align-items: flex-start;
+    background-color: transparent;
   }
 }
 

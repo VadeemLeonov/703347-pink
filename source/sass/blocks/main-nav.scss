@@ -7,25 +7,8 @@
   width: 320px;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: 2;
-
-  display: block;
-  width: 70px;
-  height: 55px;
-
-  background-color: $backgraund-main;
-
-  cursor: pointer;
-  border: none;
-
-  &:hover,
-  &:active {
-    background-color: $hover-nav;
-  }
+.main-nav__list {
+  @include list-reset;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -40,6 +23,11 @@
 
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: $highlight;
+  box-shadow: 0 8px 0 0 $highlight, 0 16px 0 0 $highlight;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
@@ -86,24 +74,39 @@
   }
 }
 
-.main-nav__list {
-  @include list-reset;
-}
-
 @media (max-width: $mobile-tablet-only) {
   .main-nav--closed .site-list__item {
     display: none;
+  }
 
-    &--active {
-      display: block;
+  .main-nav__toggle {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+
+    display: block;
+    width: 70px;
+    height: 55px;
+
+    background-color: $backgraund-main;
+
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: $hover-nav;
     }
   }
 
-  .main-nav--closed .site-list__item--current a {
-    padding-right: 70px;
-    padding-left: 70px;
+  .main-nav--nojs .main-nav__toggle {
+    position: absolute;
+    display: none;
+  }
 
-    text-align: center;
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }
 
@@ -116,21 +119,21 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    margin: 0 auto;
     background-color: $backgraund-main-transparent;
   }
 
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 960px;
+    margin: 0 auto;
+
+    background-color: transparent;
   }
 
   .main-nav__list {
     display: flex;
     align-items: center;
-    margin: 0 auto;
   }
 
   .main-nav__toggle {

@@ -1,14 +1,31 @@
 .headline {
   width: 320px;
   margin: 0 auto;
-  height: 400px;
+  height: 395px;
+  margin-bottom: -1px;
 
   display: flex;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 -70px;
+}
 
-  border: 2px solid #ff0099;
+@media (max-width: $mobile-only) {
+  .headline__text-index {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .headline__text {
@@ -23,7 +40,7 @@
 
 .headline__poster {
   position: relative;
-  margin-top: 125px;
+  margin-top: 110px;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,12 +53,27 @@
   }
 
   .headline__wrapper {
+    display: flex;
     width: 660px;
     margin: 0 auto;
   }
 
+  .headline__text-index {
+    @include font-light;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: none;
+    text-align: center;
+
+    color: $backgraund1;
+
+    margin-top: 35px;
+    width: 300px;
+  }
+
   .headline__poster {
-    margin-left: 380px;
+    margin-top: 35px;
+    width: 550px;
   }
 }
 

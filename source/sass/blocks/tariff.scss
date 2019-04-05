@@ -1,13 +1,16 @@
 .tariff {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  border: 2px solid #ff0099;
   background-color: $backgraund2;
 }
 
+.tariff__wrapper {
+  overflow-x: hidden;
+}
+
 .tariff__list {
-  margin: 0 auto;
+  margin-left: -435px;
+  width: 940px;
 }
 
 .tariff__name {
@@ -17,40 +20,49 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: $backgraund-main;
-  background-color: $backgraund1;
+  color: $backgraund1;
+  background-color: $backgraund-main;
+
+  padding-top: 18px;
+  width: 235px;
+}
+
+.tariff__name--empty {
+  background-color: $backgraund2;
 }
 
 .tariff__value {
+  margin: 0;
+  padding-bottom: 20px;
+
   @include font-light;
   font-size: 24px;
   line-height: 30px;
   text-transform: none;
   text-align: center;
-
-  color: $backgraund-main;
-  background-color: $backgraund1;
 }
 
 .tariff__field {
   @include font-regular;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
-  text-align: center;
+  text-transform: none;
 
   color: $backgraund-main;
   background-color: $backgraund1;
+
+  padding: 14px;
+  padding-left: 25px;
+  width: 235px;
 }
 
 @media (min-width: $tablet-width) {
-  .tariff__wrapper {
-    width: 660px;
-    margin: 0 auto;
-  }
-
   .tariff {
     width: auto;
     margin: 0;
+  }
+
+  .tariff__list {
+    margin: 0 auto;
   }
 }
