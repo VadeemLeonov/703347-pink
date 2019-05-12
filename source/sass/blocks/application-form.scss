@@ -1,4 +1,5 @@
 .application-form {
+  display: flex;
   background-color: $backgraund2;
 }
 
@@ -19,5 +20,11 @@
   .application-form {
     width: 440px;
     margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 63px;
+  }
+
+  .application-list__item {
+    margin: 42px;
   }
 }

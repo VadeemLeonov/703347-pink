@@ -51,7 +51,8 @@
 .competition-form__star {
   color: $highlight;
   margin-left: auto;
-  padding-top: 10px;
+  margin-right: 5px;
+  padding-top: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,6 +67,10 @@
     padding: 0 20px;
   }
 
+  .competition-form__application-form {
+    width: 660px;
+  }
+
   .competition-feedback__banner {
     width: 500px;
   }
@@ -76,6 +81,16 @@
     width: 960px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .competition-feedback__banner {
+    width: 1200px;
+    min-height: 160px;
+    margin-top: -130px;
+  }
+
+  .competition-form__application-form {
+    width: 440px;
   }
 
   .competition-form__wrapper {
