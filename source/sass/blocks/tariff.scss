@@ -27,6 +27,21 @@
   width: 235px;
 }
 
+.tariff__name--hit {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.hit {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform: rotate(-45deg);
+
+  text-transform: none;
+}
+
 .tariff__name--empty {
   background-color: $backgraund2;
 }
@@ -54,6 +69,14 @@
   padding: 14px;
   padding-left: 25px;
   width: 235px;
+}
+
+.yes {
+  fill: $green-submit;
+}
+
+.no {
+  fill: $highlight;
 }
 
 @media (min-width: $tablet-width) {

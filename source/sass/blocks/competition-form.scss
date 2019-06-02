@@ -1,7 +1,7 @@
 .competition-form {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -28,14 +28,14 @@
 
   width: 300px;
   color: $backgraund1;
-  background-color: $btn-submit;
+  background-color: $green-submit;
 
   &:hover {
     background-color: $btn-submit-hover;
   }
 
   &:active {
-    color: $btn-submit;
+    color: $green-submit;
     background-color: $btn-submit-hover;
   }
 }
@@ -57,7 +57,7 @@
 
 @media (min-width: $tablet-width) {
   .competition-form {
-    width: 660px;
+    width: $tablet-width;
   }
 
   .competition-form__wrapper {
@@ -68,7 +68,7 @@
   }
 
   .competition-form__application-form {
-    width: 660px;
+    width: $tablet-width;
   }
 
   .competition-feedback__banner {
@@ -78,13 +78,13 @@
 
 @media (min-width: $desktop-width) {
   .competition-form {
-    width: 960px;
+    width: $desktop-width;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .competition-feedback__banner {
-    width: 1200px;
+    width: $desktop-max-width;
     min-height: 160px;
     margin-top: -130px;
   }

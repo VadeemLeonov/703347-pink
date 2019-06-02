@@ -4,7 +4,7 @@
 }
 
 .main-nav__wrapper {
-  width: 320px;
+  width: $mobile-width;
 }
 
 .main-nav__list {
@@ -112,7 +112,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    width: 660px;
+    width: $tablet-width;
     margin: 0;
   }
 }
@@ -125,7 +125,7 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 960px;
+    width: $desktop-width;
     margin: 0 auto;
 
     background-color: transparent;

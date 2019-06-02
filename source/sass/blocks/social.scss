@@ -22,6 +22,10 @@
   text-decoration: none;
 
 
-  border: 3px solid #ebedef;
+  border: 3px solid $backgraund2;
   border-radius: 50%;
+}
+
+.social__link:hover {
+  border-color: $backgraund-main;
 }

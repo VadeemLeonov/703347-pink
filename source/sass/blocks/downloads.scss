@@ -17,8 +17,8 @@
   line-height: 18px;
   text-transform: none;
 
-  padding: 18px;
-  width: 240px;
+  padding: 12px;
+  width: 255px;
   border: 3px solid #ffffff;
   border-radius: 50px 50px 50px 50px;
   text-align: center;
@@ -38,6 +38,15 @@
 
 .downloads__link-list {
   @include list-reset;
+  display: flex;
+  justify-content: space-around;
+  width: 260px;
+  margin-top: 40px;
+}
+
+.downloads__available-apple {
+  margin-top: -10px;
+  margin-left: 12px;
 }
 
 @media (min-width: $tablet-width) {
