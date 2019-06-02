@@ -18,7 +18,11 @@
         <div class="main-nav__wrapper">
           <div class="logo page-header__logo">
             <a>
-              <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="PINK">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="75px" height="22px" alt="PINK">
+              </picture>
             </a>
           </div>
           <button class="page-header__toggle visually-hidden" type="button">Открыть меню
@@ -56,13 +60,19 @@
         <a class="downloads__btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
         <ul class="downloads__link-list">
           <li class="downloads__available-apple">
-            <a href="https://www.apple.com/ru/itunes/"></a>
+            <a href="https://www.apple.com/ru/itunes/">
+              <svg class="" width="60" height="60"><use xlink:href="#logo-apple"></use></svg>
+            </a>
           </li>
           <li class="downloads__available-android">
-            <a href="https://www.android.com/"></a>
+            <a href="https://www.android.com/">
+              <svg class="" width="45" height="50"><use xlink:href="#logo-android"></use></svg>
+            </a>
           </li>
           <li class="downloads__available-windows">
-            <a href="https://www.microsoft.com/ru-ru/store/b/home"></a>
+            <a href="https://www.microsoft.com/ru-ru/store/b/home">
+              <svg class="" width="45" height="45"><use xlink:href="#logo-microsoft"></use></svg>
+            </a>
           </li>
         </ul>
         <p class="downloads__info">Доступно для iPhone, ipad, Android, Windows Phone, OS X, Windows 8</p>
@@ -113,7 +123,6 @@
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
           </p>
         </div>
       </section>
@@ -128,7 +137,7 @@
                 <td class="tariff__name">База
                   <p class="tariff__value">1.99 USD</p>
                 </td>
-                <td class="tariff__name">Стандарт
+                <td class="tariff__name tariff__name--hit"><span class="hit">хит</span>Стандарт
                   <p class="tariff__value">3.99 USD</p>
                 </td>
                 <td class="tariff__name">Анлим
@@ -139,30 +148,25 @@
             <tbody class="tariff__list-body">
               <tr>
                 <td class="tariff__field">Розовый фильтр</td>
-                <td class="tariff__field">ok</td>
-                <td class="tariff__field">ok</td>
-                <td class="tariff__field">ok</td>
+                <td class="tariff__field"><svg class="yes" width="30" height="30"><use xlink:href="#icon-yes"></use></svg><span class="visually-hidden">ok</span></td>
+                <td class="tariff__field"><svg class="yes" width="30" height="30"><use xlink:href="#icon-yes"></use></svg><span class="visually-hidden">ok</span></td>
+                <td class="tariff__field"><svg class="yes" width="30" height="30"><use xlink:href="#icon-yes"></use></svg><span class="visually-hidden">ok</span></td>
               </tr>
               <tr>
                 <td class="tariff__field">Смайлики</td>
-                <td class="tariff__field">no</td>
-                <td class="tariff__field">ok</td>
-                <td class="tariff__field">ok</td>
+                <td class="tariff__field"><svg class="no" width="25" height="25"><use xlink:href="#icon-no"></use></svg><span class="visually-hidden">no</span></td>
+                <td class="tariff__field"><svg class="yes" width="30" height="30"><use xlink:href="#icon-yes"></use></svg><span class="visually-hidden">ok</span></td>
+                <td class="tariff__field"><svg class="yes" width="30" height="30"><use xlink:href="#icon-yes"></use></svg><span class="visually-hidden">ok</span></td>
               </tr>
               <tr>
                 <td class="tariff__field">Комментарии</td>
-                <td class="tariff__field">no</td>
-                <td class="tariff__field">no</td>
-                <td class="tariff__field">ok</td>
+                <td class="tariff__field"><svg class="no" width="25" height="25"><use xlink:href="#icon-no"></use></svg><span class="visually-hidden">no</span></td>
+                <td class="tariff__field"><svg class="no" width="25" height="25"><use xlink:href="#icon-no"></use></svg><span class="visually-hidden">no</span></td>
+                <td class="tariff__field"><svg class="yes" width="30" height="30"><use xlink:href="#icon-yes"></use></svg><span class="visually-hidden">ok</span></td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="tariff__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
       </section>
       <section class="our-contacts">
         <div class="our-contacts__appeal">
@@ -174,7 +178,7 @@
             <p class="our-contacts__title">Звоните:</p>
             <a class="our-contacts__data" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="our-contacts__item">
+          <li class="our-contacts__item our-contacts__item--mail">
             <p class="our-contacts__title">Пишите:</p>
             <a class="our-contacts__data" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
@@ -183,16 +187,20 @@
             <a class="our-contacts__data" href="https://yandex.ru/maps/-/CBBRM8DvXA">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <p>
-          <img src="img/map.jpg" width="320" height="200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        </p>
+        <div class="our-contacts__map">
+          <svg class="our-contacts__map-triangle" width="1200" height="140"><use xlink:href="#bg-triangle-white-footer"></use></svg>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558549914271!5m2!1sru!2sru" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <p class="our-contacts__map-bg">
+            <img src="img/bg-map-desktop@1x.jpg" width="320" height="200" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </p>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper">
         <a class="logo page-footer__logo" href="index.html">
-          <svg class="" width="145" height="50"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
+          <svg class="page-footer__icon" width="145" height="50"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -209,7 +217,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработaно</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="page-footer__icon" width="35" height="35"><use xlink:href="#logo-htmlacademy"></use></svg><span class="visually-hidden">HTML Academy</span></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg class="page-footer__icon page-footer__icon--copyright" width="35" height="35"><use xlink:href="#logo-htmlacademy"></use></svg><span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
     </footer>

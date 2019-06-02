@@ -1,11 +1,11 @@
 .page-main {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: 660px;
+    width: $tablet-width;
   }
 }
 
